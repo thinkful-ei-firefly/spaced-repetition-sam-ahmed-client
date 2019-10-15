@@ -8,12 +8,13 @@
     top: 0;
     justify-content: space-between;
     padding: 10px 15px;
-    border-bottom: 1px solid;
+    /* border-bottom: 1px solid; */
     text-transform: uppercase;
     letter-spacing: -.025em;
     align-items: center;
-    background-color: greenyellow;
-  
+    /* background: linear-gradient(to bottom, #a795ff, #423ff5,#504df5,#a795ff); */
+  color:white;
+  background: linear-gradient(right, rgb(255, 67, 67),blue);
   }
 
   @media (min-width: 768px) {
