@@ -1,0 +1,23 @@
+.RegistrationRoute__body{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    /* background: grey; */
+}
+
+.RegistrationRoute__h3{
+    max-width: 80%;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.RegistrationRoute__image {
+    width: 50%;
+    border-radius: 5% 5% 50% 50%;
+    padding: 20px;
+
+}
