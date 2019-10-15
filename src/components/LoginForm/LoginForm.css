@@ -1,0 +1,135 @@
+.LoginForm {
+    margin: 20px;
+    width: 100%;
+    position: relative;
+    /* height: 50px; */
+    /* background: blue; */
+    /* overflow:hidden; */
+
+}
+@media (min-width: 414px) {
+    .LoginForm {
+        width: 60%;
+    }
+
+  }
+
+.form-section {
+    /* margin: 20px; */
+    width: 100%;
+    position: relative;
+    height: 50px;
+    /* background: blue; */
+    /* overflow:hidden; */
+
+}
+
+.input {
+    width: 100%;
+    height: 100%;
+    color: grey;
+    padding-top: 10px;
+    font-size: 20px;
+    border: none;
+    text-align: center;
+    outline: none;
+
+}
+.label-name {
+    position: absolute;
+    bottom:0px;
+    left:0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 2px solid lightcoral;
+}
+
+.label-name::after {
+    content: '';
+    position: absolute;
+    left:0px;
+    bottom:-2px;
+    height: 100%;
+    width:100%;
+    border-bottom: 4px solid skyblue;
+    transform: translateY(-3%);
+    transition: transform 0.3s ease;
+    
+}
+
+.content-name {
+    position: absolute;
+    bottom:5px;
+    left:0px;
+    right:0px;
+    transition:  all 0.3s ease;
+}
+
+.input:focus + .label-name .content-name,
+.input:valid + .label-name .content-name {
+    transform: translateY(-150%);
+    font-size:14px;
+    color:skyblue;
+}
+
+.input:focus + .label-name::after,
+.input:valid + .label-name::after {
+    transform: translateX(0%);
+
+}
+
+
+
+.form-btn {
+    width: 60%;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    align-items: center;
+}
+
+
+.LoginForm__btn {
+    margin: 20px;
+    width: 100%;
+    border: none;
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: rgb(52, 52, 126);
+    padding: 10px;
+    border-radius: 50px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    align-items: center;
+}
+
+.LoginForm__btn:hover {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+    }
+
+
+.RegistrationForm__footer{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.required {
+    color: white;
+}
+
+@media (min-width: 414px) {
+    .login, .register, .header-user-name, .logout{
+        display: inline;
+        padding-left: 5px;
+      }
+
+  }

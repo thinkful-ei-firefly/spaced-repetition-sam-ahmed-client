@@ -1,0 +1,16 @@
+.LoginRoute__body{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    /* background: grey; */
+}
+
+.LoginRoute__h3{
+    max-width: 80%;
+    padding: 10px;
+    text-align: center;
+
+}

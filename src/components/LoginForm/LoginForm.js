@@ -3,6 +3,7 @@ import { Input, Label } from '../Form/Form'
 import AuthApiService from '../../services/auth-api-service'
 import UserContext from '../../contexts/UserContext'
 import Button from '../Button/Button'
+import './LoginForm.css'
 
 class LoginForm extends Component {
   static defaultProps = {
@@ -43,38 +44,47 @@ class LoginForm extends Component {
   render() {
     const { error } = this.state
     return (
-      <form
+      <form 
         className='LoginForm'
         onSubmit={this.handleSubmit}
       >
         <div role='alert'>
-          {error && <p>{error}</p>}
+          {error && <p className='alert'>{error}</p>}
         </div>
-        <div>
-          <Label htmlFor='login-username-input'>
-            Username
-          </Label>
+        <div className='form-section'>
+          
           <Input
+          className='input'
             ref={this.firstInput}
             id='login-username-input'
             name='username'
             required
           />
-        </div>
-        <div>
-          <Label htmlFor='login-password-input'>
-            Password
-          </Label>
+          <Label className='label-name' htmlFor='login-username-input'>
+          <span className='content-name' >Username</span>
+        </Label>
+
+        </div >
+        <div className='form-section'>
+          
           <Input
+          className='input'
             id='login-password-input'
             name='password'
             type='password'
             required
           />
+          <Label className='label-name' htmlFor='login-password-input'>
+            <span className='content-name' >Password</span>
+          </Label>
         </div>
-        <Button type='submit'>
+        <div className='form-btn' >
+        <Button
+        className='LoginForm__btn' type='submit'>
           Login
         </Button>
+        </div>
+        
       </form>
     )
   }
