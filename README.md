@@ -45,3 +45,45 @@ npm run cypress:run
 ```
 
 This will save video recordings of the test runs in the directory `./cypress/videos/`.
+
+
+start ->
+Learning Route
+  * Word Component
+  * Response input
+  * Continue button
+  * Current Score
+
+  * state:
+    * current word
+    * Current Score: (component mount = 0)
+
+submit answer -> 
+  * PATCH specific word correct/incorrect update
+  * Update current score
+  * load a new word
+  * Update algorithm based on response
+
+finish quiz -> 
+  * PATCH total score
+
+  Learning Context
+    word:
+    current score: 
+
+0: 0, 2, 5, 9
+1: 1, 3, 6, 0 ->
+2: 2, 4, 7, 1 
+3: 3, 5, 8, 2
+4: 4, 6, 9, 3
+5: 5, 7, 0, 4
+6: 6, 8, 1, 5
+7: 7, 9, 2, 6
+8: 8, 0, 3, 7
+9: 9, 1, 4, 8
+
+10: every time
+11: never
+
+10 -> (1-9) -> never 
+            -> every time
