@@ -31,13 +31,9 @@
   }
   
 .header-link:first-child {
-    /* padding: 5px; */
-    /* border: 1px solid black; */
+
     padding: 7px;
     text-align: center;
-    /* width: fit-content; */
-  /* color:black; */
-  /* border-radius: 7px; */
     
   }
 
