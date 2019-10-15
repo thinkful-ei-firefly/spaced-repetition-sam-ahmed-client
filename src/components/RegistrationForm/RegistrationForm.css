@@ -1,13 +1,19 @@
 
 .form {
     margin: 20px;
-    width: 50%;
+    width: 100%;
     position: relative;
     /* height: 50px; */
     /* background: blue; */
     /* overflow:hidden; */
 
 }
+@media (min-width: 414px) {
+    .form {
+        width: 60%;
+    }
+
+  }
 
 .form-section {
     /* margin: 20px; */
@@ -120,3 +126,11 @@ transition: all 0.4s ease 0s;
 .required {
     color: white;
 }
+
+@media (min-width: 414px) {
+    .login, .register, .header-user-name, .logout{
+        display: inline;
+        padding-left: 5px;
+      }
+
+  }
