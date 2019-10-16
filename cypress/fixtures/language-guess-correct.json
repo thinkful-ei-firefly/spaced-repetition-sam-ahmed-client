@@ -2,7 +2,7 @@
   "nextWord": "test-next-word-from-correct-guess",
   "correct_count": 111,
   "incorrect_count": 222,
-  "totalScore": 333,
+  "total_score": 333,
   "answer": "test-answer-from-correct-guess",
   "correct": true,
   "original": "Testnextword",

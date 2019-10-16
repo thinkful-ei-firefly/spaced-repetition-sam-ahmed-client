@@ -85,16 +85,21 @@ describe(`User story: Answer feedback`, function() {
         const [languageHeadFixture, incorrectFixture] = fixtures
 
         cy.get('main section').within($section => {
-          cy.get('h3')
+          cy.get('div')
             .should(
               'have.text',
-              `Your total score is: ${incorrectFixture.totalScore}`,
+              `Your total score is: ${incorrectFixture.total_score}`,
             )
           cy.get('h2')
             .should(
               'have.text',
               `Good try, but not quite right`,
             )
+          // cy.get('p')
+          //   .should(
+          //     'have.text',
+          //     `The correct translation for "${languageHeadFixture.nextWord}" was "${incorrectFixture.answer}" and you chose "${guess}"`,
+          //   )
           cy.get('button')
             .should(
               'have.text',
@@ -134,16 +139,21 @@ describe(`User story: Answer feedback`, function() {
         const [languageHeadFixture, incorrectFixture] = fixtures
 
         cy.get('main section').within($section => {
-          cy.get('h3')
+          cy.get('div')
             .should(
               'have.text',
-              `Your total score is: ${incorrectFixture.totalScore}`,
+              `Your total score is: ${incorrectFixture.total_score}`,
             )
           cy.get('h2')
             .should(
               'have.text',
               `You were correct!`,
             )
+          // cy.get('p')
+          //   .should(
+          //     'have.text',
+          //     `The correct translation for "${languageHeadFixture.nextWord}" was "${incorrectFixture.answer}" and you chose "${guess}"`,
+          //   )
           cy.get('button')
             .should(
               'have.text',
