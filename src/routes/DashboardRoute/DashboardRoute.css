@@ -1,0 +1,132 @@
+.dashboard{
+    margin: auto;
+    width: 95%;
+
+    @media screen and (min-width: 768px) {
+        width: 75%;
+      }
+
+  }
+
+  .score{
+    text-align: center;
+    font-size: 20px;
+    padding:  10px 5px;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+      float: left;
+      margin: 20px auto;
+    }
+  }
+
+  .dashboard h2{
+    text-align: center;
+    margin: 15px auto;
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+
+  .bar{
+    height: 100px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+  }
+  .bar button {
+    text-align: center;
+    background: linear-gradient(right, green,rgb(128, 179, 128) );
+    color:white;
+    padding:  10px 15px;
+    border: 1px solid;
+    text-transform: uppercase;
+    margin: 10px auto;
+
+    @media screen and (min-width: 768px) {
+      margin: 20px auto;
+      float: right;
+    }
+
+  }
+
+  .bar button:hover {
+        cursor: pointer;  
+  }
+
+  .dashboard h3{
+    font-size: 24px;
+    margin: 15px auto;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  ul{
+    text-align: center;
+    margin: 15px auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    padding: 5px;
+  }
+
+  ul li{
+      list-style: none;
+      flex: 100%;
+      margin: 2% 5%;
+      line-height: 1.75rem;
+
+      @media screen and (min-width: 768px) {
+        flex: 30%;
+      }
+
+}
+
+
+
+    
+
+    .word-list-item{
+        background: green;
+        padding: 15px 5px;
+    }
+
+      
+
+    .word-list-item{
+        background: green;
+        padding: 15px 5px;
+
+
+      }
+    .word-list-item h3{
+        font-size: 20px;
+        margin: 5px auto;
+      }
+
+
+    .word-list-item p{
+        font-size: 16px;
+      }
+    .word-list-item h4{
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      .word-list-item{
+        background: green;
+        padding: 15px 5px;
+
+
+      }
+
+      .word-list-item h3{
+        font-size: 20px;
+        margin: 5px auto;
+
+      }
+
+      .word-list-item p{
+        font-size: 16px;
+      }
