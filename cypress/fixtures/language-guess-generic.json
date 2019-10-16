@@ -1,8 +1,8 @@
 {
-  "nextWord": "test-next-word-from-generic-guess",
+  "nextWord": "Testnextword",
   "correct_count": 777,
   "incorrect_count": 777,
-  "total_score": 777,
+  "total_score": 999,
   "answer": "test-answer-from-generic-guess",
   "correct": true,
   "original": "Testnextword",
