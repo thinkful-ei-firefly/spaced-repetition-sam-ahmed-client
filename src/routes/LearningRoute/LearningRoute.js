@@ -15,7 +15,6 @@ class LearningRoute extends Component {
     const { id } = this.context.user
 
     if (!totalScore ) {
-      console.log('getting head')
       ApiLanguageService.getLanguageHead(id)
       .then(head => this.context.setHead(head))
     }
