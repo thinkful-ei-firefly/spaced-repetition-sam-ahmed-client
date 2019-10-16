@@ -24,7 +24,6 @@ const ApiLanguageService = {
   },
   submitAnswer(guess, original, language_id) {
     const body = {guess, original, language_id}
-    console.log(body)
     return fetch(`${config.API_ENDPOINT}/language/guess`, {
       method: 'POST',
       headers: {

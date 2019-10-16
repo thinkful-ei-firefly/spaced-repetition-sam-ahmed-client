@@ -14,7 +14,6 @@ class AnswerSubmit extends React.Component {
     this.context.setGuess(guess)
     ApiLanguageService.submitAnswer(guess, nextWord, id)
       .then(res => {
-        console.log(res)
         this.context.setAnswerResponse(res)
         this.context.setCorrect({correct: res.correct})
       })
