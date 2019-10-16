@@ -4,6 +4,7 @@ import ApiLanguageService from '../../services/api-language-service'
 import { Link } from 'react-router-dom'
 
 import Word from '../../components/Word/Word'
+import './DashboardRoute.css'
 
 class DashboardRoute extends Component {
 
@@ -31,15 +32,21 @@ class DashboardRoute extends Component {
     ))
     return (
       <section className='dashboard'>
-        <header>
-          <h2>{language.name}</h2>
-          <div>Total correct answers: {language.total_score}</div>
-          <Link to='/learn'>Start</Link>
-          <div>
-            <h3>Your Words</h3>
+        <header className='dashboard-header'>
+          <h2 className="language-header">{language.name}</h2>
+          </header>
+          <div className="bar">
+          <p  className="score" >Total correct answers: {language.total_score}</p>
+          <Link to='/learn'>
+          <button className="start">Start practicing</button>
+          </Link>
+          </div>
+          
+          <div className="practice-words">
+            <h3 className="words-header">Your Words</h3>
             <ul>{wordComponents ? wordComponents : ''}</ul>
           </div>
-        </header>
+        
       </section>
     );
   }
