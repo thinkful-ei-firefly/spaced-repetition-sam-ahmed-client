@@ -42,10 +42,10 @@ describe(`User story: User's dashboard`, function() {
 
         cy.get('a')
           .should('have.attr', 'href', '/learn')
-          .and('have.text', 'Start practicing')
+          .and('have.text', 'Start')
 
         cy.get('h3')
-          .should('have.text', 'Words to practice')
+          .should('have.text', 'Your Words')
       })
     })
   })
@@ -62,13 +62,13 @@ describe(`User story: User's dashboard`, function() {
           cy.root()
             .should(
               'contain',
-              `correct answer count: ${word.correct_count}`
+              `correct: ${word.correct_count}`
             )
 
           cy.root()
             .should(
               'contain',
-              `incorrect answer count: ${word.incorrect_count}`
+              `incorrect: ${word.incorrect_count}`
             )
         })
       })

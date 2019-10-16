@@ -38,8 +38,8 @@
   }
 
   .header-link:last-child {
-      border: 1px solid black;
-      padding: 7px;
+    border: 1px solid black;
+    padding: 7px;
     color:black;
     border-radius: 7px;
     text-align: center;
@@ -50,7 +50,7 @@
 
   @media (min-width: 768px) {
     .header-link:last-of-type {
-        padding-left: 15px;
+        margin-left: 15px;
     }
   }
 

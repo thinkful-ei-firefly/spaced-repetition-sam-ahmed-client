@@ -7,6 +7,10 @@ const UserContext = React.createContext({
   language: {},
   words: [],
   user: {},
+  head: {},
+  correct: null,
+  answerResponse: {},
+  guess: null,
   error: null,
   setError: () => {},
   clearError: () => {},
@@ -20,7 +24,7 @@ export default UserContext
 export class UserProvider extends Component {
   constructor(props) {
     super(props)
-    const state = { language: {name:'loading...'}, words: [], user: {}, error: null }
+    const state = { language: {name:'loading...'}, words: [], user: {}, head: {}, correct: null, answerResponse: {correct: null, original: null, translation: null}, guess: null, error: null }
 
     const jwtPayload = TokenService.parseAuthToken()
 
@@ -70,6 +74,22 @@ export class UserProvider extends Component {
     this.setState({ words })
   }
 
+  setHead = head => {
+    this.setState({ head })
+  }
+
+  setCorrect = correct => {
+    this.setState({ correct })
+  }
+
+  setAnswerResponse = answerResponse => {
+    this.setState({ answerResponse })
+  }
+
+  setGuess = guess => {
+    this.setState({ guess })
+  }
+
   processLogin = authToken => {
     TokenService.saveAuthToken(authToken)
     const jwtPayload = TokenService.parseAuthToken()
@@ -116,10 +136,18 @@ export class UserProvider extends Component {
       language: this.state.language,
       words: this.state.words,
       user: this.state.user,
+      head: this.state.head,
+      correct: this.state.correct,
+      answerResponse: this.state.answerResponse,
+      guess: this.state.guess,
       error: this.state.error,
       setError: this.setError,
       clearError: this.clearError,
       setUser: this.setUser,
+      setHead: this.setHead,
+      setCorrect: this.setCorrect,
+      setAnswerResponse: this.setAnswerResponse,
+      setGuess: this.setGuess,
       setLanguage: this.setLanguage,
       setWords: this.setWords,
       processLogin: this.processLogin,
