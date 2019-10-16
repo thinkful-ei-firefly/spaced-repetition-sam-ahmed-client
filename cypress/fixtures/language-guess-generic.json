@@ -4,5 +4,7 @@
   "incorrect_count": 777,
   "total_score": 777,
   "answer": "test-answer-from-generic-guess",
-  "correct": true
+  "correct": true,
+  "original": "Testnextword",
+  "translation": "test-guess-incorrect"
 }

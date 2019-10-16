@@ -14,10 +14,12 @@ class AnswerSubmit extends React.Component {
     this.context.setGuess(guess)
     ApiLanguageService.submitAnswer(guess, nextWord, id)
       .then(res => {
+        this.context.setHead({totalScore: res.total_score,nextWord:res.nextWord, wordCorrectCount:res.correct_count, wordIncorrectCount:res.incorrect_count  })
         this.context.setAnswerResponse(res)
         this.context.setCorrect({correct: res.correct})
       })
   }
+
 
   render() {
     return (

@@ -11,9 +11,14 @@ class LearningRoute extends Component {
   static contextType = UserContext
 
   componentDidMount() {
+  const { totalScore } = this.context.head
     const { id } = this.context.user
-    ApiLanguageService.getLanguageHead(id)
+
+    if (!totalScore ) {
+      
+      ApiLanguageService.getLanguageHead(id)
       .then(head => this.context.setHead(head))
+    }
     ApiLanguageService.getLanguage(id)
     .then(res => {
       this.context.setLanguage(res.language)

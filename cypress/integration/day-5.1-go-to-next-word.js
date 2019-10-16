@@ -40,7 +40,7 @@ describe(`User story: Go to next word`, function() {
           cy.get('p').eq(0)
             .should(
               'have.text',
-              `Your total score is: ${languageHeadFixture.totalScore}`,
+              `Your total score is: ${languageHeadFixture.total_score}`,
             )
           cy.get('h2')
             .should('have.text', 'Translate the word:')
