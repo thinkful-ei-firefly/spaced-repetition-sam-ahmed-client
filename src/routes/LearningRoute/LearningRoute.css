@@ -1,0 +1,226 @@
+.LearningRoute{
+    width: 90%;
+    /* border: 1px black solid; */
+    text-align: center;
+    margin: auto;
+    
+}
+    @media screen and (min-width: 768px) {
+        .LearningRoute{
+            width: 75%;
+            }
+    }
+
+    .LearningRoute h2, h3{
+        text-transform: uppercase;
+      }
+  
+
+    .answers-count{
+      width: 90%;
+      margin: auto;
+      }
+      @media screen and (min-width: 768px) {
+          .answers-count {
+            display: flex;
+            width: 83%;
+          }
+      }
+
+
+      .count{
+        /* border: 1px black solid; */
+        margin: 15px auto;
+        padding: 5px;
+        background: linear-gradient(to left, rgba(135, 197, 0, 0.523));
+        border-radius: 10px;
+        padding: 2%;
+        /* color: white; */
+    }
+
+
+    @media screen and (min-width: 768px) {
+        .count{
+            margin: 15px 2%;
+            flex: 46%;
+        }
+    }
+
+
+
+
+    .LearningRoute h2, h3{
+      line-height: 30px;
+      margin: 10px auto;
+    }
+
+    .LearningRoute h2{
+      margin-top: 20px;
+    }
+
+    .DisplayScore h2{
+        margin: 25px auto;
+        width: 90%;
+      }
+
+      .DisplayScore p {
+        width: 100%;
+        /* background: lightgrey; */
+        height: 35px;
+        padding-top: 5px;
+        margin: 0px;
+        /* border-bottom: 1px solid black; */
+        text-transform: uppercase;
+        top: 0;
+      }
+
+    .DisplayFeedback{
+      margin: 25px auto;
+      width: 90%;
+    }
+
+      .DisplayFeedback p{
+        margin: 25px auto;
+      }
+      @media screen and (min-width: 768px) {
+        .DisplayFeedback p{
+             width: 75%;
+        }
+    }
+
+
+
+    .container{
+      width: 90%;
+      margin: auto;
+    }
+
+    @media screen and (min-width: 768px) {
+        .container{
+            width: 80%;
+        }
+      }
+
+      .word-page-body{
+        /* width: 100%; */
+        /* height: 4rem; */
+        /* border: 1px solid black; */
+        /* display: flex; */
+        /* justify-content: space-evenly; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        background: rgba(109, 178, 109, 0.584);
+        border-radius: 10px;
+        padding: 5%;
+        /* color: white; */
+        /* border: #02084f solid 1px; */
+        margin-top: 2rem;
+      }
+
+    #learn-guess-form{
+      /* background: green; */
+      padding: 20px 10px;
+      margin: 15px auto;
+      /* border: solid black 1px; */
+      
+
+      /* width: 100%; */
+    /* height: 4rem; */
+    /* border: 1px solid black; */
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    background: rgba(135, 197, 0, 0.523);
+    border-radius: 10px;
+    padding: 7%;
+    /* color: white; */
+    /* border: #02084f solid 1px; */
+
+    }
+
+    #learn-guess-form input,label {
+        display: block;
+      }
+
+      #learn-guess-form button {
+        padding:  10px 15px;
+        margin: 10px auto;
+        border: none;
+        background: rgba(109, 178, 109, 0.938);
+        /* color: #ffffff !important; */
+        font-weight: 100;
+        padding: 20px;
+        text-transform: uppercase;
+        border-radius: 6px;
+        display: inline-block;
+        transition: all 0.3s ease 0s;
+      }
+
+        @media screen and (min-width: 768px) {
+            #learn-guess-form button{
+                width: 60%;
+            }
+
+        }
+
+        #learn-guess-form button:hover {
+          cursor: pointer;
+          color: #faf8f8 !important;
+          font-weight: 700 !important;
+          letter-spacing: 3px;
+          background: linear-gradient(top, rgba(135, 197, 0, 0.523),rgba(119, 211, 202, 0.673) );
+          -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+          -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+          transition: all 0.3s ease 0s;
+        }
+
+
+        #learn-guess-form input{
+        width: 90%;
+        margin: 15px auto;
+        }
+
+        @media screen and (min-width: 768px) {
+            #learn-guess-form input{
+                width: 60%;
+            } 
+        }
+
+     
+
+.nextWord__btn {
+    border-radius: 7px;
+    background: linear-gradient(to right, rgba(135, 197, 0, 0.523), rgba(77, 174, 145, 0.557)) !important;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+    padding: 15px 27px 15px 0px;
+    /* width: 200px; */
+    transition: all 0.4s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  .nextWord__btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+  }
+  .nextWord__btn span:after {
+    content: '\00bb\00bb\00bb';
+    /* position: absolute; */
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  .nextWord__btn:hover span {
+    padding-right: 25px;
+  }
+  .nextWord__btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

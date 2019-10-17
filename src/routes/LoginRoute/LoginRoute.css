@@ -12,5 +12,18 @@
     max-width: 80%;
     padding: 10px;
     text-align: center;
+    border-radius:11px ;
+    padding: 10px;
+    /* background-color: rgba(173, 218, 129, 0.81); */
+    color:linear-gradient(right, rgb(255, 67, 67),blue);
+    /* color:rgb(0, 51, 255); */
+    /* color: 0px 0px 6px rgba(255, 255, 255, 1); */
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 21, 255, 0.783);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(22, 47, 240, 0.666);
+    transition: all 0.4s ease 0s;
 
+}
+
+.LoginRoute__h2{
+    text-transform: uppercase;
 }

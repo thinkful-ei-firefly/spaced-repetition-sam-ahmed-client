@@ -36,7 +36,7 @@ class DashboardRoute extends Component {
           <h2 className="language-header">{language.name}</h2>
           </header>
           <div className="bar">
-          <p  className="score" >Total correct answers: {language.total_score}</p>
+          <p  className="score" >Total correct answers: <span className='bold'>{language.total_score}</span></p>
           <Link to='/learn'>
           <button className="start">Start practicing</button>
           </Link>

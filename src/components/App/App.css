@@ -1,4 +1,14 @@
-
+.green{
+    color: green;
+  }
+  
+  .red{
+    color: red;
+  }
+  
+  .bold{
+    font-weight: bold;
+  }
 .alert{
     color:red;
     margin: 10px auto;

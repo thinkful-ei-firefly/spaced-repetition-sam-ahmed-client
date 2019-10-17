@@ -12,12 +12,24 @@
     max-width: 80%;
     padding: 10px;
     text-align: center;
+    margin:0;
+    border-radius: 7px;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
 
 }
 
 .RegistrationRoute__image {
     width: 50%;
     border-radius: 5% 5% 50% 50%;
-    padding: 20px;
+    margin: 10px;
+    
 
+}
+.RegistrationRoute__h2{
+    margin-bottom: 0px;
+    text-transform: uppercase;
+  
 }

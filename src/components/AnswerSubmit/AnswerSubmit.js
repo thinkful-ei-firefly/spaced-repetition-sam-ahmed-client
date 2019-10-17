@@ -23,11 +23,20 @@ class AnswerSubmit extends React.Component {
 
   render() {
     return (
-      <form onSubmit={event => this.handleSubmit(event)}>
-          <label htmlFor='learn-guess-input'>What's the translation for this word?</label>
-          <input name='guess' type='text' required id='learn-guess-input'></input>
-          <button type='submit'>Submit your answer</button>
-      </form>
+     <div className='container'>
+     <form 
+     id="learn-guess-form" 
+     onSubmit={event => this.handleSubmit(event)}>
+     <label htmlFor='learn-guess-input'>What's the translation for this word?</label>
+     <input name='guess' type='text' required id='learn-guess-input'
+    
+     aria-label="Word guess entry"
+     aria-required="true"
+     tabIndex='0'
+     required ></input>
+     <button type='submit'>Submit your answer</button>
+ </form>
+     </div>
     )
   }
 }

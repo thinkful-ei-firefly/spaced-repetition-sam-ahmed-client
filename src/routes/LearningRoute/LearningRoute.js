@@ -5,6 +5,8 @@ import ApiLanguageService from '../../services/api-language-service'
 import Feedback from '../../components/Feedback/Feedback'
 import Question from '../../components/Question/Question'
 
+import './LearningRoute.css'
+
 
 class LearningRoute extends Component {
 
@@ -28,7 +30,7 @@ class LearningRoute extends Component {
   render() {
     const {correct} = this.context
     return (
-      <div>
+      <div className='LearningRoute' id='learningRoute-aria' aria-live="assertive">
         {correct === null ?
           <Question /> :
           <Feedback />
