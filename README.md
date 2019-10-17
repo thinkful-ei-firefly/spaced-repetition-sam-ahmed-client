@@ -1,6 +1,6 @@
-# ![WebApp](https://github.com/spaced-repetition-sam-ahmed-client/blob/master/images/register.png?raw=true)
+# ![WebApp](https://github.com/thinkful-ei-firefly/spaced-repetition-sam-ahmed-client/blob/master/images/register.png?raw=true)
 
-# ![WebApp](https://github.com/spaced-repetition-sam-ahmed-client/blob/master/images/dashboard.png?raw=true)
+# ![WebApp](https://github.com/thinkful-ei-firefly/spaced-repetition-sam-ahmed-client/blob/master/images/dashboard.png?raw=true)
 
 
 # Spaced Repetition -- web Application
@@ -141,15 +141,15 @@ As a logged in user, I'm directed to a dashboard where I can see my progress lea
 ## Site Screenshots
 
 #### Register Page.
-  ![](https://github.com/spaced-repetition-sam-ahmed-client/blob/master/images/register.png?raw=true)
+  ![](https://github.com/thinkful-ei-firefly/spaced-repetition-sam-ahmed-client/blob/master/images/register.png?raw=true)
 #### Sign In Page
-  ![](https://github.com/spaced-repetition-sam-ahmed-client/blob/master/images/login.png?raw=true)
+  ![](https://github.com/thinkful-ei-firefly/spaced-repetition-sam-ahmed-client/blob/master/images/login.png?raw=true)
 #### Dashboard Page
-  ![](https://github.com/spaced-repetition-sam-ahmed-client/blob/master/images/dashboard.png?raw=true)
+  ![](https://github.com/thinkful-ei-firefly/spaced-repetition-sam-ahmed-client/blob/master/images/dashboard.png?raw=true)
 #### Question Page
-  ![](https://github.com/spaced-repetition-sam-ahmed-client/blob/master/images/question.png?raw=true)
+  ![](https://github.com/thinkful-ei-firefly/spaced-repetition-sam-ahmed-client/blob/master/images/question.png?raw=true)
 #### FeedBack Page
-  ![](https://github.com/spaced-repetition-sam-ahmed-client/blob/master/images/feedback.png?raw=true)
+  ![](https://github.com/thinkful-ei-firefly/spaced-repetition-sam-ahmed-client/blob/master/images/feedback.png?raw=true)
 
 
 ##  Wireframe
